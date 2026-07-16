@@ -1,0 +1,131 @@
+
+    .custom-modal-content {
+        background-color: #f0f8fa !important;
+        border-radius: 10px; /* Add rounded corners for a more attractive look */
+        padding: 20px; /* Add padding for spacing inside the modal */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+        text-align: center; /* Center text horizontally */
+    }
+
+    .custom-modal-content h5 {
+        color: #005b82; /* Title text color */
+        margin-bottom: 20px; /* Add margin to separate the title from the content */
+    }
+
+    #validationMessage {
+        color: #005b82; /* Validation text color */
+        font-size: 18px; /* Increase font size for better readability */
+        line-height: 1.5; /* Improve line height for better spacing */
+    }
+
+    .modal-header {
+        border-bottom: 2px solid #005b82; /* Add a subtle border at the bottom of the header */
+    }
+
+    .modal-footer {
+        border-top: 2px solid #005b82; /* Add a subtle border at the top of the footer */
+    }
+
+    .modal-footer button {
+        background-color: #005b82; /* Footer button background color */
+        color: #fff; /* Footer button text color */
+    }
+
+    .modal-footer button:hover {
+        background-color: #00314a; /* Footer button background color on hover */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this CSS code to your stylesheet */
+
+/* Define the animation keyframes */
+@keyframes perspectiveRightIn {
+    from {
+        transform: perspective(800px) rotateY(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(800px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the modal content */
+.custom-modal-content {
+    animation: perspectiveRightIn 0.5s ease-out;
+}
+
+/* Optional: Add hover effect to the close button */
+.btn-close:hover {
+    transform: rotate(90deg);
+}
+
+
+
+/* 
+// Loader  */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 60% opacity black overlay */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none;
+    pointer-events: none; /* Make the overlay non-interactive */
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    z-index: 1001; /* Ensure it's above the overlay */
+}
+
+.loader img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    animation: rotate 2s linear infinite; /* Rotate the image in 360 degrees over 2 seconds */
+}
+
+.loader p {
+    color: white;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+    /* Change by Ejaj */
+
+
+
+.EjenseTechnologyLogo {   
+    font-weight: bold !important;
+    font-family: 'Comic Sans MS', sans-serif !important;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide (typical mobile devices) */
+    .EjenseTechnologyLogo {        
+        font-weight: bold !important;
+        font-family: 'Comic Sans MS', sans-serif !important;
+    }
+}

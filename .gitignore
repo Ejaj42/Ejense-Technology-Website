@@ -1,0 +1,7 @@
+# Sensitive configuration — do not commit
+config/database.php
+config/email.php
+error_log
+*.log
+source-archive/
+.agents/

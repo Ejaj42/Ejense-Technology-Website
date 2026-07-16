@@ -1,0 +1,72 @@
+/**
+ * Ejense Technology — Design Tokens
+ * Premium international software company palette
+ */
+
+:root {
+    /* Brand Colors */
+    --ej-primary: #0066FF;
+    --ej-primary-dark: #0052CC;
+    --ej-primary-light: #3385FF;
+    --ej-accent: #00D4FF;
+    --ej-accent-glow: rgba(0, 212, 255, 0.25);
+
+    /* Neutrals — Light Mode */
+    --ej-bg: #F8FAFC;
+    --ej-bg-alt: #FFFFFF;
+    --ej-bg-dark: #0A1628;
+    --ej-bg-card: rgba(255, 255, 255, 0.72);
+    --ej-text: #0F172A;
+    --ej-text-muted: #64748B;
+    --ej-text-light: #94A3B8;
+    --ej-border: rgba(15, 23, 42, 0.08);
+    --ej-border-strong: rgba(15, 23, 42, 0.15);
+
+    /* Glassmorphism */
+    --ej-glass-bg: rgba(255, 255, 255, 0.65);
+    --ej-glass-border: rgba(255, 255, 255, 0.35);
+    --ej-glass-blur: 16px;
+    --ej-glass-shadow: 0 8px 32px rgba(0, 102, 255, 0.08);
+
+    /* Shadows */
+    --ej-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+    --ej-shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --ej-shadow-lg: 0 16px 48px rgba(15, 23, 42, 0.12);
+    --ej-shadow-glow: 0 0 40px rgba(0, 102, 255, 0.15);
+
+    /* Typography */
+    --ej-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --ej-font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+
+    /* Spacing & Radius */
+    --ej-radius-sm: 8px;
+    --ej-radius-md: 12px;
+    --ej-radius-lg: 20px;
+    --ej-radius-xl: 28px;
+    --ej-radius-full: 9999px;
+
+    /* Transitions */
+    --ej-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --ej-transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Layout */
+    --ej-header-height: 80px;
+    --ej-topbar-height: 45px;
+}
+
+[data-theme="dark"] {
+    --ej-bg: #0A1628;
+    --ej-bg-alt: #111D32;
+    --ej-bg-card: rgba(17, 29, 50, 0.85);
+    --ej-text: #F1F5F9;
+    --ej-text-muted: #94A3B8;
+    --ej-text-light: #64748B;
+    --ej-border: rgba(255, 255, 255, 0.08);
+    --ej-border-strong: rgba(255, 255, 255, 0.15);
+    --ej-glass-bg: rgba(17, 29, 50, 0.75);
+    --ej-glass-border: rgba(255, 255, 255, 0.1);
+    --ej-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --ej-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --ej-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --ej-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
